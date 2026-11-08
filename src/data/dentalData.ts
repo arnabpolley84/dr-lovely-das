@@ -3,15 +3,22 @@
  * Mukundapur, Kolkata
  */
 
-// User provided images with safe fallback
-export const IMAGE_A = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqgFF6Dpj7o7n0MaMVK45zZ8Sm_XusHGKjA1HY2FH43njtnO1OLNzyWZo0fLzJ6Fw3K7F22weQoqCzkogxpp1GnJ1AbP36VLexcFpOCSPYDBkCSptAalV1ROIx-GzZaEmNKiSrfjGUsCsY=s564-k-no";
-export const IMAGE_B = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlnoTseCq3lpQiiAD1vihS_73SyZhxva59BpFQkuHpYqfnKM1CfjsE6dWlDpBFxY6mtSHfPUcZeYIj7hpRHV8ZOm6VCTl31zz24hvSN0M255qfQccKYbDduBbWJyV8brruQMuCa4hN7kxgX=s423-k-no";
+import heroRootCanal from "../assets/images/hero_root_canal_clinic_1790432446695.jpg";
+import heroPrecision from "../assets/images/hero_precision_endodontics_1790432487052.jpg";
+import heroConsultation from "../assets/images/hero_gentle_consultation_1790432465561.jpg";
+import clinicReception from "../assets/images/clinic_reception_interior_1790432498629.jpg";
+import restoredSmile from "../assets/images/restored_healthy_smile_1790432515036.jpg";
 
-export const LOCAL_HERO_1 = "/src/assets/images/hero_root_canal_clinic_1790432446695.jpg";
-export const LOCAL_HERO_2 = "/src/assets/images/hero_precision_endodontics_1790432487052.jpg";
-export const LOCAL_HERO_3 = "/src/assets/images/hero_gentle_consultation_1790432465561.jpg";
-export const LOCAL_HERO_4 = "/src/assets/images/clinic_reception_interior_1790432498629.jpg";
-export const LOCAL_HERO_5 = "/src/assets/images/restored_healthy_smile_1790432515036.jpg";
+// Reliable bundled image assets
+export const LOCAL_HERO_1 = heroRootCanal;
+export const LOCAL_HERO_2 = heroPrecision;
+export const LOCAL_HERO_3 = heroConsultation;
+export const LOCAL_HERO_4 = clinicReception;
+export const LOCAL_HERO_5 = restoredSmile;
+
+// Primary specialist portrait and clinic photos
+export const IMAGE_A = heroConsultation;
+export const IMAGE_B = heroRootCanal;
 
 export const DOCTOR_INFO = {
   name: "Dr. Lovely Das",

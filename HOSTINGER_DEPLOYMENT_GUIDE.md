@@ -92,3 +92,7 @@ If you prefer using Hostinger's built-in Git deployment tool:
    - This ensures routes like `/admin` and `/admin/login` work properly when refreshed on Hostinger's Apache/LiteSpeed web server without showing 404 errors.
 2. **Speed & Caching**:
    - Gzip compression and long-term asset caching are pre-configured in `.htaccess`.
+3. **Image Assets Resolution**:
+   - All clinic images are imported via ES module imports (`import img from '../assets/images/...'`). When `npm run build` runs, Vite processes and outputs them to `dist/assets/*.jpg` with cache-busting fingerprints.
+   - Copies are also placed in `/public/images/`, so they are accessible as static files at `https://marketline.sbs/images/*.jpg`.
+   - Never use raw `/src/assets/...` path strings in production code, as the `/src/` folder is only used during local Vite dev and does not exist in the production `dist/` or `public_html/`.
